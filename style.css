@@ -1,0 +1,81 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #ff6f61;
+}
+
+label {
+  margin-top: 15px;
+  display: block;
+  font-weight: bold;
+}
+
+select, button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e85b50;
+}
+
+.hidden {
+  display: none;
+}
+
+#result img {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+ul {
+  text-align: left;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
