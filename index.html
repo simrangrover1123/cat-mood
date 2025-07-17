@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mood Cat Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app">
+
+    <!-- Questionnaire -->
+    <div id="questionnaire">
+      <h1>🐱 Mood Cat Tracker</h1>
+      <label>How are you feeling?</label>
+      <select id="mood">
+        <option value="happy">😊 Happy</option>
+        <option value="sad">😢 Sad</option>
+        <option value="angry">😡 Angry</option>
+        <option value="relaxed">😌 Relaxed</option>
+        <option value="excited">🤩 Excited</option>
+        <option value="tired">🥱 Tired</option>
+      </select>
+
+      <label>Energy level?</label>
+      <select id="energy">
+        <option value="high">⚡ High</option>
+        <option value="low">💤 Low</option>
+      </select>
+
+      <button id="findCat">Find My Cat!</button>
+      <button id="viewHistory">📜 View History</button>
+    </div>
+
+    <!-- Result -->
+    <div id="result" class="hidden">
+      <h2 id="resultText">Your mood cat is loading...</h2>
+      <img id="catImage" src="" alt="Your mood cat"/>
+      <div class="buttons">
+        <button id="anotherCat">Show Another Cat</button>
+        <button id="back">⬅ Back</button>
+      </div>
+    </div>
+
+    <!-- History -->
+    <div id="historySection" class="hidden">
+      <h2>📅 Your Mood History</h2>
+      <ul id="historyList"></ul>
+      <canvas id="moodChart"></canvas>
+      <div class="buttons">
+        <button id="backFromHistory">⬅ Back</button>
+        <button id="clearHistory">🗑 Clear History</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
